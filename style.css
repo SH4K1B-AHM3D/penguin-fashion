@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Yanone+Kaffeesatz:wght@300;400;500;600&display=swap');
+*{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 600px;
+}
+.button{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    background-color: #6047ec;
+    color: #fff;
+    border-radius: 5px;
+    padding: 12px 35px;
+}
+.button:hover{
+    color: darkgrey;
+}
+.button img{
+    width: 20px;
+    margin-right: 5px;
+}
+h3{
+    color: #3e2f66;
+    font-weight: 700;
+}
+
+/*global*/
+
+.c-img{
+    width: 50%;
+}
+
+.c-1{
+    font-weight: 600;
+    font-size: 65px;
+    color: #3e2f66;
+    margin-top: 30px;
+}
+.c-2{
+    font-weight: 600;
+    font-size: 65px;
+    color: #6eccc4;
+}
+.banner-button{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    background-color: #6047ec;
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px 0 40px 48%;
+    padding: 12px 35px;
+}
+.banner-button:hover{
+    color: darkgrey;;
+}
+.banner-button img{
+    width: 20px;
+    margin-right: 5px;
+}
+/*products*/
+#product{
+    background-color: azure;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.crd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 10px 20px 10px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 15px;
+}
+.crd .crd-img{
+    display: flex;
+    justify-content: center;
+    background-color: wheat;
+    height: 300px;
+    background-size: cover;
+    margin: 10px 10px 20px 10px;
+    border-radius: 20px;
+}
+.crd .crd-img img{
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px 10px 20px 10px;
+    border-radius: 20px;
+}
+.crd-price{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 34px;
+    color: #6eccc4
+}
+.crd:hover{
+    cursor: pointer;
+    transform: scaleY(103%);
+    
+}
+/*about*/
+#about{
+    margin-top: 100px;
+}
+.abt-sec{
+    display: flex;
+    justify-content: space-between;
+}
+.abt-crds{
+    width: 49%;
+}
+.crds{
+    width: 90%;
+    height: 110px;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px;
+    display: flex;
+    justify-content: space-around;
+}
+.crds:hover{
+    cursor: pointer;
+    background-color: lightcyan;
+}
+.crds-icn{
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.crds-icn img{
+    width: 100%;
+}
+.crds-bdy{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.abt-img{
+    width: 49%;
+    display: flex;
+    justify-content: center;
+}
+.abt-img img{
+    width: 90%;
+    height: 300px;
+}
+/*footer*/
+
+#contact{
+    margin-top: 100px;
+    background: linear-gradient(#fff, #3e2f66);
+    color: white;
+}
+.f-main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.social{
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+.f-i-l{
+    width: 69%;
+    display: flex;
+    justify-content: start;
+}
+.f-i-l i{
+    margin: 30px;
+    font-size: 40px;
+    color: #002647;
+}
+.f-i-l i:hover{
+    font-size: 35px;
+    transform: translateX(5px);
+}
+.e-p{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #002647;
+}
+.e-p i{
+    margin: 10px 30px;
+    font-size: 24px;
+}
+.pay{
+    width: 20%;
+    margin: auto;
+    display: flex;
+}
+.pay-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pay-img img{
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 992px){
+    .cards{
+        justify-content: center;
+    }
+    .crd{
+        width: 45%;
+    }
+    .abt-sec{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .abt-crds{
+        width: 100%;
+    }
+    .crds{
+        width: 100%;
+        margin: 20px auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .abt-img{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .f-main{
+        flex-direction: column;
+        width: 90%;
+        margin: 10px auto;
+    }
+    .social{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .pay{
+        width: 40%;
+        margin: 20px auto;
+    }
+}
+@media only screen and (max-width: 768px) {
+    header{
+        height: 500px;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+    }
+   .crd{
+       width: 50%;
+   }
+   .social{
+       margin: auto;
+       justify-content: center;
+       flex-direction: column;
+    }
+    .f-i-l{
+        width: 100%;
+        justify-content: center;
+    }
+    .e-p{
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 767px) {
+    header{
+        height: 800px;
+    }
+    .c-img{
+        width: 150px;
+        height: 300px;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+    }
+    .crd{
+        margin: 20px 5px 20px 5px;
+        width: 60%;
+        padding: 10px;
+        border-radius: 30px;
+        box-shadow: 1px 1px 15px;
+    }
+    .crd .crd-img{
+        height: 250px;
+        margin: 10px 10px 20px 10px;
+        border-radius: 20px;
+    }
+    .crd .crd-img img{
+        width: 180px;
+        height: 230px;
+        padding: 10px;
+        margin: 10px 10px 20px 10px;
+        border-radius: 20px;
+    }
+    .crd-price{
+        font-size: 30px;
+    }
+
+    .button{
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 8px 18px;
+        
+    }
+    .button img{
+        width: 15px;
+        margin-right: 5px;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .c-1, .c-2{
+        font-weight: 600;
+        font-size: 45px;
+        margin-top: 20px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .crd .crd-img img{
+        width: 170px;
+        height: 230px;
+        padding: 10px;
+        margin: 10px 10px 20px 10px;
+        border-radius: 20px;
+    }
+    .crd-price{
+        font-size: 24px;
+    }
+    .crd{
+        width: 70%;
+        margin: 20px auto;
+    }
+    .button{
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 8px 18px;
+        
+    }
+    .button img{
+        width: 15px;
+        margin-right: 5px;
+    }
+  }
+  @media only screen and (max-width: 360px){
+    header{
+        height: 900px;
+    }
+    .crd{
+        width: 90%;
+    }
+  }
